@@ -1,0 +1,28 @@
+<p>my-tasklist works!</p>
+ 
+<mat-card style="text-align:center">
+
+Task:<mat-form-field>
+        <input matInput placeholder="Taskname" [(ngModel)]="Taskname"/>
+     </mat-form-field>
+
+    
+Priority:<mat-form-field>
+         <select matNativeControl [(ngModel)]="Taskpriority">
+            <option value="high">High</option>
+            <option value="medium">medium</option>
+            <option value="low">Low</option>
+         </select>
+         </mat-form-field>
+     
+
+ 
+Date:<mat-form-field>
+     <input matInput type="Date" [(ngModel)]="Date">
+     </mat-form-field>
+     <button mat-fab color="warn" (click)="Add()">Add</button>
+
+</mat-card>     
+     
+
+        

@@ -1,0 +1,11 @@
+<p>my-piority works!</p>
+<mat-card style="text-align: center">
+        <div *ngFor="let task of tasksarray ">
+        
+            {{task.TaskName}}
+            {{task.PriorityName}}
+            {{task.Datee}}
+        
+        <button mat-fab color="warn" (click)="Delete(task)">Delete</button> 
+        </div> 
+        </mat-card>
